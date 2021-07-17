@@ -7,6 +7,7 @@ public class Program {
         int count_start = 0;
         ArrayList<Flyable> flyableArrayList = new ArrayList<Flyable>();
         AircraftFactory aircraftFactory = new AircraftFactory();
+        WeatherTower weatherTower = new WeatherTower();
         try(FileReader reader = new FileReader("scenario.txt"))
         {
             int c;
@@ -15,7 +16,6 @@ public class Program {
             }
             String[] parts = file.split("\n");
             count_start = Integer.parseInt(parts[0]);
-            WeatherTower weatherTower = new WeatherTower();
             for(int i = 1; i != parts.length; i++) {
                 String[] fly = parts[i].split(" ");
                 if(fly.length != 5) {
@@ -35,6 +35,12 @@ public class Program {
         } catch(Exception e) {
             System.out.println("Error file read!");
             System.exit(-1);
+        }
+        for(int i = 0; i != count_start; i++){
+            System.out.println("Simulation №" + (i + 1) + " started!");
+            for(int it = 0; it != flyableArrayList.size(); it++) {
+                flyableArrayList.get(it).updateConditions();
+            }
         }
     }
 }

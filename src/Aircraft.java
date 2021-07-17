@@ -2,9 +2,13 @@ public class Aircraft {
     private long id;
     private String name;
     Coordinates coordinates;
+    boolean earth_plane;
 
     Aircraft(String name, Coordinates coordinates) {
         this.id = AirIdGenerator.getInstance().generateId();
+        this.coordinates = coordinates;
+        this.name = name;
+        this.earth_plane = false;
     }
 
     long idCounter() {
@@ -21,5 +25,9 @@ public class Aircraft {
 
     public long getId() {
         return id;
+    }
+
+    public Coordinates getCoordinates() {
+        return coordinates;
     }
 }
