@@ -4,7 +4,9 @@ public class Coordinates {
     private int height;
 
     Coordinates(int longitude, int latitude, int height) {
-
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.height = height;
     }
 
     public int getLongitude() {
