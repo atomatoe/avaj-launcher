@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e8e80a8-2d8e-40c3-9217-0c02d775b41b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Program.java" afterDir="false" />
+    <list default="true" id="8e8e80a8-2d8e-40c3-9217-0c02d775b41b" name="Default Changelist" comment="add Program.java">
+      <change afterPath="$PROJECT_DIR$/src/Aircraft.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AircraftFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baloon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Coordinates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Flyable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Helicopter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JetPlane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WeatherProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WeatherTower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +24,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -21,7 +32,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="989a8f2a-49c6-462c-b657-3e7d997d364c" />
+        <option name="url" value="https://github.com/atomatoe/avaj-launcher.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="ProjectId" id="1vRVZLYzQsSE2DYtS0SQ1BMr9SP" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -67,8 +89,23 @@
       <updated>1626524942272</updated>
       <workItem from="1626524943497" duration="37000" />
       <workItem from="1626524981745" duration="19000" />
-      <workItem from="1626525029967" duration="137000" />
+      <workItem from="1626525029967" duration="1330000" />
     </task>
+    <task id="LOCAL-00001" summary="add Program.java">
+      <created>1626526684057</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1626526684057</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add Program.java">
+      <created>1626526799036</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1626526799036</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,5 +122,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add Program.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Program.java" />
   </component>
 </project>
