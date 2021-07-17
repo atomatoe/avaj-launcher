@@ -4,14 +4,14 @@ public class Aircraft {
     Coordinates coordinates;
 
     Aircraft(String name, Coordinates coordinates) {
-
+        this.id = AirIdGenerator.getInstance().generateId();
     }
 
     long idCounter() {
-        return 0;
+        return id;
     }
 
     long nextId() {
-        return 0;
+        return (id + 1);
     }
 }
