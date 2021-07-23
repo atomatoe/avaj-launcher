@@ -3,7 +3,6 @@ public class AircraftFactory {
     Flyable newAircraft(String type, String name, int longitude, int latitude, int height) {
         if (longitude > -1 && latitude > -1 && height > -1) {
             if(height > 100) {
-                System.out.println("Height " + type + "(" + name + ") the height is too high (" + height + ")! Height = 100!");
                 height = 100;
             }
             if (type.equals("Baloon"))

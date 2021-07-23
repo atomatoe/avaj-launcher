@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e8e80a8-2d8e-40c3-9217-0c02d775b41b" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/src/FileWriters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/manifest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/avaj-launcher/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/avaj-launcher/Program.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenario.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scenario.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AircraftFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AircraftFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Baloon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baloon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Flyable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Flyable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Helicopter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helicopter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JetPlane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JetPlane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WeatherProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WeatherProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WeatherTower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WeatherTower.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,33 +53,28 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
-    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Program" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Program" />
       <module name="avaj-launcher" />
+      <option name="PROGRAM_PARAMETERS" value="scenario.txt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Program" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -90,7 +87,8 @@
       <workItem from="1626524943497" duration="37000" />
       <workItem from="1626524981745" duration="19000" />
       <workItem from="1626525029967" duration="14055000" />
-      <workItem from="1627042783549" duration="6080000" />
+      <workItem from="1627042783549" duration="6970000" />
+      <workItem from="1627053550653" duration="4323000" />
     </task>
     <task id="LOCAL-00001" summary="add Program.java">
       <created>1626526684057</created>
@@ -134,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626550411140</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update">
+      <created>1627051913211</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1627051913211</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

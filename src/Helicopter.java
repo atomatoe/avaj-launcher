@@ -10,22 +10,23 @@ public class Helicopter extends Aircraft implements Flyable {
         if(earth_plane == true)
             return;
         String weather = weatherTower.getWeather(coordinates, weathers);
+        FileWriters writer = FileWriters.getInstance();
         if (weather.equals("SUN")) {
             coordinates = new Coordinates(coordinates.getLongitude() + 10, coordinates.getLatitude(), coordinates.getHeight() + 2);
-            System.out.println("Helicopter#"+ getName() + "(" + getId() + "): This is hot.");
+            writer.add_text("Helicopter#"+ getName() + "(" + getId() + "): This is hot.");
         } else if (weather.equals("RAIN")) {
             coordinates = new Coordinates(coordinates.getLongitude() + 5, coordinates.getLatitude(), coordinates.getHeight());
-            System.out.println("Helicopter#"+ getName() + "(" + getId() + "): Gyrocopter! Gyrocopter! Rain!.");
+            writer.add_text("Helicopter#"+ getName() + "(" + getId() + "): Gyrocopter! Gyrocopter! Rain!.");
         } else if (weather.equals("FOG")) {
             coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude(), coordinates.getHeight() - 3);
-            System.out.println("Helicopter#"+ getName() + "(" + getId() + "): SHIT... Fog...");
+            writer.add_text("Helicopter#"+ getName() + "(" + getId() + "): SHIT... Fog...");
         } else if (weather.equals("SNOW")) {
             coordinates = new Coordinates(coordinates.getLongitude(), coordinates.getLatitude(), coordinates.getHeight() - 12);
-            System.out.println("Helicopter#"+ getName() + "(" + getId() + "):  My rotor is going to freeze!");
+            writer.add_text("Helicopter#"+ getName() + "(" + getId() + "):  My rotor is going to freeze!");
         }
         if (this.coordinates.getHeight() <= 0) {
-            System.out.println("Tower says: Helicopter#" + getName() + "("+ getId() +") landing");
-            System.out.println("Tower says: Helicopter#" + getName() + "("+ getId() +") unregistered from weather tower.");
+            writer.add_text("Tower says: Helicopter#" + getName() + "("+ getId() +") landing");
+            writer.add_text("Tower says: Helicopter#" + getName() + "("+ getId() +") unregistered from weather tower.");
             weatherTower.unregister(this);
             earth_plane = true;
         }
@@ -34,8 +35,9 @@ public class Helicopter extends Aircraft implements Flyable {
     @Override
     public void registerTower(WeatherTower weatherTower) {
         this.weatherTower = weatherTower;
+        FileWriters writer = FileWriters.getInstance();
         weatherTower.register(this);
-        System.out.println("Tower says: Helicopter#" + getName() + "("+ getId() +") registered to weather tower.");
+        writer.add_text("Tower says: Helicopter#" + getName() + "("+ getId() +") registered to weather tower.");
 
     }
 }
