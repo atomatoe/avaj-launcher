@@ -1,4 +1,4 @@
 public interface Flyable {
-    void updateConditions();
+    void updateConditions(String[] weathers);
     void registerTower(WeatherTower WeatherTower);
 }

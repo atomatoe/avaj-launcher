@@ -6,10 +6,10 @@ public class Baloon extends Aircraft implements Flyable {
     }
 
     @Override
-    public void updateConditions() {
+    public void updateConditions(String[] weathers) {
         if(earth_plane == true)
             return;
-        String weather = weatherTower.getWeather(coordinates);
+        String weather = weatherTower.getWeather(coordinates, weathers);
         if (weather.equals("SUN")) {
             coordinates = new Coordinates(coordinates.getLongitude() + 2, coordinates.getLatitude(), coordinates.getHeight() + 4);
             System.out.println("Baloon#"+ getName() + "(" + getId() + "): Let's enjoy the good weather and take some pics.");
